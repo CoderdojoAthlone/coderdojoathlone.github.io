@@ -1,0 +1,6 @@
+items:
+- ref: index
+- ref: about-us
+- ref: news
+- ref: resources
+- ref: register

@@ -1,0 +1,13 @@
+<ul>
+  {% assign translatedMenuItems=site.pages | where:'lang', page.lang %}
+
+  {% for menu in include.navigation.items %}
+
+  {% assign translatedMenuItem=translatedMenuItems | where:'ref', menu.ref | first %}
+
+  <li>
+    <a href="{{translatedMenuItem.url}}">{{translatedMenuItem.title}}</a>
+  </li>
+
+  {% endfor %}
+</ul>
