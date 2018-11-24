@@ -1,13 +1,13 @@
-<ul>
+<nav class="d-flex flex-wrap flex-justify-around">
   {% assign translatedMenuItems=site.pages | where:'lang', page.lang %}
 
   {% for menu in include.navigation.items %}
 
   {% assign translatedMenuItem=translatedMenuItems | where:'ref', menu.ref | first %}
 
-  <li>
+  <div class="mx-2 my-1">
     <a href="{{translatedMenuItem.url}}">{{translatedMenuItem.title}}</a>
-  </li>
+  </div>
 
   {% endfor %}
-</ul>
+</nav>

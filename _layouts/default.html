@@ -1,23 +1,23 @@
 ---
 layout: compress
 ---
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{page.lang}}">
 <head>
-    <title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
+  <title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
 
-    <meta name="author" content="{{site.author_name}}">
-    <meta name="description" content="{{page.description}}">
-    <meta name="keywords" content="{{page.keywords | join: ' '}}">
+  <meta name="description" content="{{page.description}}">
+  <meta name="keywords" content="{{page.keywords | join: ' '}}">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
-    <link href="{{site.baseurl}}/assets/site.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/coderdojoathlone.css">
 
-    {% if site.google_analytics and jekyll.environment == 'production' %}
-    {% include analytics.html %}
-    {% endif %}
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
 </head>
 <body>
 
@@ -25,11 +25,15 @@ layout: compress
 {% assign dictionary=site.data.locales[page.lang].dictionary %}
 {% assign navigation=locales[page.lang].navigation %}
 
-{% include header-menu.html
-navigation=navigation
-%}
+<header class="container-xl p-3">
+  {% include header-menu.html
+  navigation=navigation
+  %}
+</header>
 
+<div class="container-xl p-3">
 {{content}}
+</div>
 
 </body>
 </html>
