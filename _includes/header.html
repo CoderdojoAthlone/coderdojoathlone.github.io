@@ -1,0 +1,13 @@
+{% assign translatedRegister=translatedPages | where: 'ref','register' | first %}
+
+<header class="d-flex cda-header text-white align-items-baseline">
+  <div class="pr-3 flex-fill">
+    <h1 class="h1 m-0">
+      <a href="{{page.lang | relative_url}}">Coderdojo Athlone</a>
+    </h1>
+  </div>
+
+  <div class="">
+    <a href="{{translatedRegister.url | relative_url}}">Register</a>
+  </div>
+</header>

@@ -1,0 +1,11 @@
+@import "colors";
+
+.cda-header {
+  h1 {
+    a,
+    a:hover {
+      color: $color_light;
+      text-decoration: none;
+    }
+  }
+}

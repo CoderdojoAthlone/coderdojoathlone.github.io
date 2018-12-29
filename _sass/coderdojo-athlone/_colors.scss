@@ -1,0 +1,23 @@
+$theme1: (
+  positive: #0BC7B1,
+  light: #F1F0E2,
+  secondary: #D9BB74,
+  warning: #F25652,
+  dark: #054549
+);
+
+$theme2: (
+  positive: #016699,
+  light: #E4E5E6,
+  secondary: #99CCCC,
+  warning: #FF2105,
+  dark: #004466
+);
+
+$theme: $theme2;
+
+$color_positive: map_get($theme, positive);
+$color_light: map_get($theme, light);
+$color_secondary: map_get($theme, secondary);
+$color_warning: map_get($theme, warning);
+$color_dark: map_get($theme, dark);

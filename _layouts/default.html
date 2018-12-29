@@ -12,27 +12,26 @@ layout: compress
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/coderdojoathlone.css">
+  <link rel="stylesheet" href="{{'/assets/css/style.css' | relative_url}}">
+  <link rel="stylesheet" href="{{'/assets/css/cda-theme.css' | relative_url}}">
+  <link rel="stylesheet" href="{{'/assets/vendors/bootstrap.min.css' | relative_url}}">
+  <link rel="stylesheet" href="{{'/assets/vendors/font-awesome.min.css' | relative_url}}">
 
   {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
   {% endif %}
 </head>
-<body>
+<body class="cda-container-body">
 
 {% assign locales=site.data.locales %}
 {% assign dictionary=site.data.locales[page.lang].dictionary %}
-{% assign navigation=locales[page.lang].navigation %}
+{% assign translatedPages=site.pages | where:'lang', page.lang %}
 
-<header class="container-xl p-3">
-  {% include header-menu.html
-  navigation=navigation
-  %}
-</header>
-
-<div class="container-xl p-3">
-{{content}}
+<div class="container-lg h-100 py-3">
+  <div class="cda-container-header p-3">{% include header.html %}</div>
+  <div class="cda-container-content mt-3 p-3 overflow-auto">
+    {{content}}
+  </div>
 </div>
 
 </body>

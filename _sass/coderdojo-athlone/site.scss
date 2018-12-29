@@ -1,0 +1,16 @@
+@import "colors";
+@import "header";
+@import "split-50";
+
+.cda {
+  &-container {
+    &-body {
+      background-color: darken($color_dark, 10);
+      color: $color_light;
+    }
+
+    &-content {
+      background-color: darken($color_dark, 5);
+    }
+  }
+}

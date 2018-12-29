@@ -6,4 +6,6 @@ title:      Home
 permalink:  /en/
 ---
 
-Home page EN
+{% include split-50.html 
+   sections="partial-location,partial-class-scratch,partial-class-web" 
+%}
