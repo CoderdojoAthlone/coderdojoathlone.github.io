@@ -1,0 +1,41 @@
+{% assign translatedSet=include.set | where:'lang', page.lang %}
+
+{% assign p=page %}
+
+{% assign labels = '' %}
+{% assign links  = '' %}
+{% assign refs   = '' %}
+
+{% for i in (0..9) %}
+
+{% assign labels = labels | append: "|" | append: p.title %}
+{% assign urls   = urls   | append: "|" | append: p.url   %}
+{% assign refs   = refs   | append: "|" | append: p.ref   %}
+
+{% assign p=translatedSet | where:'ref', p.parent | first %}
+
+{% if p==nil %}
+{% break %}
+{% endif %}
+
+{% endfor %}
+
+{% assign labels = labels | split: "|" | reverse %}
+{% assign urls   = urls   | split: "|" | reverse %}
+{% assign refs   = refs   | split: "|" | reverse %}
+
+<div class="breadcrumb width-full p-0 bg-transparent">
+  {% for label in labels %}
+  {% assign url = urls[forloop.index0] %}
+  {% assign ref = refs[forloop.index0] %}
+
+  {% if page.ref==ref %}
+  <li class="breadcrumb-item">{{label}}</li>
+  {% else %}
+  <li class="breadcrumb-item">
+    <a href="{{url | relative_url}}">{{label}}</a>
+  </li>
+  {% endif %}
+
+  {% endfor %}
+</div>

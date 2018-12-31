@@ -4,9 +4,19 @@
 <div class="cda-split50">
   {% for ref in sectionRefs %}
   {% assign section=translatedPages | where: 'ref',ref | first %}
-  <div class="d-flex py-3 my-4 align-items-center cda-row">
-    <div class="col-6 text-center">{{section.content}}</div>
-    <div class="col-6">
+  <div class="d-flex py-3 my-4 align-items-center cda-row flex-wrap">
+    <div class="col-12 col-sm-6 text-center mb-4 mb-sm-0">
+      {{section.content | markdownify}}
+
+      {% if section.readMore %}
+      <div>
+        {% assign readMorePage=translatedPages | where: 'ref',section.readMore | first %}
+        <a class="" href="{{readMorePage.url | relative_url}}">Read more</a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6">
       <img class="img-fluid" src="{{section.caption | relative_url}}" alt="{{ref}}">
     </div>
   </div>

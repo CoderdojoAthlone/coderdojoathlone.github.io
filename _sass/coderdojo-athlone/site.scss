@@ -11,6 +11,8 @@
 
     &-content {
       background-color: darken($color_dark, 5);
+      box-shadow: inset -2px 2px 3px 1px rgba(0, 0, 0, .5);
+      border-radius: 5px;
     }
   }
 }
