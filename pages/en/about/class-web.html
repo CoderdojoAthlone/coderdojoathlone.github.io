@@ -1,0 +1,21 @@
+---
+layout:     default
+lang:       en
+ref:        class-web
+title:      Web classes
+parent:     about
+breadcrumb: true
+permalink:  /en/about/web-classes
+---
+
+{% assign translatedPages=site.pages | where: 'lang', page.lang %}
+{% assign info=translatedPages | where: 'ref', 'partial-class-web' | first %}
+
+<div class="row">
+  <div class="col">
+    {{info.content | markdownify}}
+  </div>
+  <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+    <img class="img-fluid" src="{{info.caption | relative_url}}" alt="{{info.ref}}">
+  </div>
+</div>

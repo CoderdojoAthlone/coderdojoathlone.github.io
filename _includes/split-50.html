@@ -12,8 +12,8 @@
       <div>
         {% assign readMorePage=translatedPages | where: 'ref',section.readMore | first %}
         <a class="" href="{{readMorePage.url | relative_url}}">Read more</a>
-        {% endif %}
       </div>
+      {% endif %}
     </div>
 
     <div class="col-12 col-sm-6">

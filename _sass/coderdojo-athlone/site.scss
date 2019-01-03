@@ -12,6 +12,10 @@
 
     &-content {
       background-color: darken($color_dark, 5);
+
+      img {
+        border-radius: 3px;
+      }
     }
 
     @media (min-width: $screen-lg) {

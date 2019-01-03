@@ -27,7 +27,7 @@ layout: compress
 {% assign dictionary=site.data.locales[page.lang].dictionary %}
 {% assign translatedPages=site.pages | where:'lang', page.lang %}
 
-<div class="container-lg h-100 d-flex flex-column">
+<div class="container-xl h-100 d-flex flex-column">
   <div class="cda-container-header mt-3 mb-2 p-3">{% include header.html %}</div>
   <div class="cda-container-content p-4 flex-grow-1">
 
@@ -48,9 +48,7 @@ layout: compress
 
     {{content}}
   </div>
-  <footer class="cda-container-footer text-small text-secondary p-3">
-    &copy; 2019 - Coderdojo Athlone
-  </footer>
+  <footer class="cda-container-footer text-small text-secondary p-3">{{site.copyright}}</footer>
 </div>
 
 </body>
