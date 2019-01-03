@@ -3,7 +3,6 @@
 .cda-split50 {
   .cda-row {
     background-color: rgba(darken($color_dark, 10), .75);
-    box-shadow: 0 0 5px 1px rgba(153, 204, 204, 0.75);
 
     &:nth-of-type(2n) {
       flex-direction: row-reverse;

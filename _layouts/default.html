@@ -27,9 +27,9 @@ layout: compress
 {% assign dictionary=site.data.locales[page.lang].dictionary %}
 {% assign translatedPages=site.pages | where:'lang', page.lang %}
 
-<div class="container-lg h-100">
+<div class="container-lg h-100 d-flex flex-column">
   <div class="cda-container-header mt-3 mb-2 p-3">{% include header.html %}</div>
-  <div class="cda-container-content p-4 overflow-auto">
+  <div class="cda-container-content p-4 flex-grow-1">
 
     <!-- start: breadcrumb on pages with 'breadcrumb: true' -->
     {% if page.breadcrumb %}
@@ -43,13 +43,13 @@ layout: compress
     <!-- end: breadcrumb -->
 
     {% if page.showTitle != false %}
-    <h2 class="h2">{{page.title}}</h2>
+    <h2 class="h2 mb-4">{{page.title}}</h2>
     {% endif %}
 
     {{content}}
   </div>
   <footer class="cda-container-footer text-small text-secondary p-3">
-    &copy; Coderdojo Athlone - 2019
+    &copy; 2019 - Coderdojo Athlone
   </footer>
 </div>
 

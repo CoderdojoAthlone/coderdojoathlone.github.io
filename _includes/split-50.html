@@ -4,7 +4,7 @@
 <div class="cda-split50">
   {% for ref in sectionRefs %}
   {% assign section=translatedPages | where: 'ref',ref | first %}
-  <div class="d-flex py-3 my-4 align-items-center cda-row flex-wrap">
+  <div class="d-flex py-3 my-4 align-items-center cda-row flex-wrap cda-shadow-secondary">
     <div class="col-12 col-sm-6 text-center mb-4 mb-sm-0">
       {{section.content | markdownify}}
 
