@@ -8,4 +8,8 @@ breadcrumb: true
 permalink:  /en/about/mentors
 ---
 
-Mentors page EN
+
+{% include profile.html 
+   names="derek-goode,marc-raffalli,ian-campbell" 
+%}
+

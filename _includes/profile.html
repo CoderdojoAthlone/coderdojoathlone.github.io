@@ -1,0 +1,20 @@
+{% assign profileRefs=include.names | split: ',' %}
+{% assign translatedPages=site.pages | where:'lang', page.lang %}
+
+<div class="cda-profile">
+  {% for ref in profileRefs %}
+  {% assign section=translatedPages | where: 'ref',ref | first %}
+  <div class="d-flex py-3 my-4 align-items-start cda-row flex-wrap no-gutters">
+    <div class="col-12 col-sm cda-profile-thumbnail">
+      <img class="img-fluid cda-shadow-secondary" src="{{section.caption | relative_url}}" alt="{{ref}}">
+    </div>
+
+    <div class="col-12 col-sm cda-profile-description mt-3 mt-sm-0 pl-0 pl-sm-4">
+      <h3 class="h3">{{section.fullName}}</h3>
+
+      {{section.content | markdownify}}
+    </div>
+
+  </div>
+  {% endfor %}
+</div>

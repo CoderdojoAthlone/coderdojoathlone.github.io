@@ -1,0 +1,23 @@
+@import "colors";
+@import "variables";
+
+.cda-profile {
+  .cda-row {
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &-thumbnail {
+    @media (min-width: $screen-sm) {
+      max-width: 250px !important;
+    }
+  }
+
+  &-description {
+  }
+}
