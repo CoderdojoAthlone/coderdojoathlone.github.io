@@ -1,0 +1,20 @@
+{% if include.title %}
+<h3 class="h3">{{include.title}}</h3>
+{% endif %}
+
+{% assign postsByMonth=include.list | group_by_exp:"post", "post.date | date: '%Y %m'"%}
+
+{% for postsOfMonth in postsByMonth %}
+<ul class="cda-article-list list-unstyled">
+  <li>{{postsOfMonth.name}}</li>
+
+  {% for post in postsOfMonth.items %}
+  <li>
+    <a href="{{post.url | relative_url}}">
+      <h4 class="h4">{{post.title}}</h4>
+      <p>{{post.description}}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}

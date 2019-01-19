@@ -1,0 +1,16 @@
+{% if include.title %}
+<h3 class="h3">{{include.title}}</h3>
+{% endif %}
+
+<ul class="cda-article-list list-unstyled">
+  {% for article in include.list %}
+
+  <li class="my-2">
+    <a href="{{article.url | relative_url}}">
+      <h4 class="h4">{{article.title}}</h4>
+      <p>{{article.description}}</p>
+    </a>
+  </li>
+
+  {% endfor %}
+</ul>
