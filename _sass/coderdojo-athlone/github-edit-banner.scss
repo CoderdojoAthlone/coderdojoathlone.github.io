@@ -1,0 +1,23 @@
+@import "colors";
+
+.cda-github-edit-banner {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+
+  > a {
+    display: block;
+    position: absolute;
+    top: -40px;
+    width: 250px;
+    transform: rotateZ(45deg);
+    background-color: darken($color_dark, 10);
+    box-shadow: -2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    transform-origin: left;
+    text-align: center;
+    z-index: 1;
+  }
+}

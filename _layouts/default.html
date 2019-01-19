@@ -15,7 +15,7 @@ layout: compress
   <link rel="stylesheet" href="{{'/assets/css/style.css' | relative_url}}">
   <link rel="stylesheet" href="{{'/assets/css/cda-theme.css' | relative_url}}">
   <link rel="stylesheet" href="{{'/assets/vendors/bootstrap.min.css' | relative_url}}">
-  <link rel="stylesheet" href="{{'/assets/vendors/font-awesome.min.css' | relative_url}}">
+  <link rel="stylesheet" href="{{'/assets/vendors/font-awesome/css/font-awesome.min.css' | relative_url}}">
 
   {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
@@ -30,6 +30,7 @@ layout: compress
 <div class="container-xl h-100 d-flex flex-column">
   <div class="cda-container-header mt-3 mb-2 p-3">{% include header.html %}</div>
   <div class="cda-container-content p-4 flex-grow-1">
+    {% include github-edit-banner.html %}
 
     <!-- start: breadcrumb on pages with 'breadcrumb: true' -->
     {% if page.breadcrumb %}
