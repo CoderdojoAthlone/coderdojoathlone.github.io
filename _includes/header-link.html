@@ -1,0 +1,7 @@
+{% assign label=include.label | default: include.page.title %}
+
+{% if include.page.ref == page.ref %}
+<span>{{label}}</span>
+{% else %}
+<a href="{{include.page.url | relative_url}}">{{label}}</a>
+{% endif %}

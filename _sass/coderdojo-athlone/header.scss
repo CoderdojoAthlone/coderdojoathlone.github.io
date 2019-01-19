@@ -9,11 +9,17 @@
     }
   }
 
-  nav a {
+  nav a,
+  nav span {
     padding-left: 1rem;
 
-    &:first-of-type {
+    &:first-child {
       padding-left: 0;
+    }
+
+    &.cda-active {
+      color: white;
+      text-decoration: underline;
     }
   }
 }

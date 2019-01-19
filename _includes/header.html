@@ -1,21 +1,24 @@
-{% assign translatedRegister=translatedPages | where: 'ref','register' | first %}
-{% assign translatedAbout=translatedPages | where: 'ref','about' | first %}
+{% assign translatedHome=translatedPages      | where: 'ref','index'     | first %}
+{% assign translatedRegister=translatedPages  | where: 'ref','register'  | first %}
+{% assign translatedAbout=translatedPages     | where: 'ref','about'     | first %}
+{% assign translatedProject=translatedPages   | where: 'ref','projects'  | first %}
 {% assign translatedResources=translatedPages | where: 'ref','resources' | first %}
 
 <header class="cda-header text-white">
   <div class="d-flex align-items-baseline">
     <div class="pr-3 flex-fill">
       <h1 class="h1 m-0">
-        <a href="{{page.lang | relative_url}}">Coderdojo Athlone</a>
+        <a href="{{translatedHome.url | relative_url}}">Coderdojo Athlone</a>
       </h1>
     </div>
 
     <div class="">
-      <a href="{{translatedRegister.url | relative_url}}">Register</a>
+      {% include header-link.html page=translatedRegister %}
     </div>
   </div>
   <nav class="d-flex align-items-baseline mt-2">
-    <a href="{{translatedAbout.url | relative_url}}">About</a>
-    <a href="{{translatedResources.url | relative_url}}">Resources</a>
+    {% include header-link.html page=translatedAbout %}
+    {% include header-link.html page=translatedProject %}
+    {% include header-link.html page=translatedResources %}
   </nav>
 </header>
