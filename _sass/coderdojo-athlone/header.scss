@@ -8,4 +8,12 @@
       text-decoration: none;
     }
   }
+
+  nav a {
+    padding-left: 1rem;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+  }
 }
