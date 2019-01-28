@@ -10,6 +10,6 @@ permalink:  /en/about/mentors
 
 
 {% include profile.html 
-   names="derek-goode,marc-raffalli,ian-campbell" 
+   names="bartek-zaucha,derek-goode,ian-campbell,mahesh-kumar-l,marc-raffalli,marie-pidgeon,matthew-swart,ronan" 
 %}
 

@@ -2,7 +2,7 @@
 lang:       en
 ref:        ian-campbell
 fullName:   Ian Campbell
-caption:    assets/images/scratch-class.png
+caption:    assets/images/mentors/ian-campbell.jpg
 ---
 
 I work as a software engineer for the past 20+ years.

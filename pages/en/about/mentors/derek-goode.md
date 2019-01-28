@@ -2,7 +2,7 @@
 lang:       en
 ref:        derek-goode
 fullName:   Derek Goode
-caption:    assets/images/scratch-class.png
+caption:    assets/images/mentors/derek-goode.jpg
 ---
 
 I have a varied tech background experience over the last 20 years 
