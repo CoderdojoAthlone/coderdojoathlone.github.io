@@ -5,4 +5,4 @@ caption:    assets/images/ait-eng-building.png
 readMore:   mentors-team
 ---
 
-The Coderdojo association is based only of volunteers.
+Check out out team of volunteers!
