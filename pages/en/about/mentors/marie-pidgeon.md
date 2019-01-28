@@ -5,4 +5,4 @@ fullName:   Marie Pidgeon
 caption:    assets/images/mentors/marie-pidgeon.jpg
 ---
 
-Profile to come
+Profile description to come

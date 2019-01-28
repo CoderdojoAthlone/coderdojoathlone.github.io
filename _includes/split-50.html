@@ -17,7 +17,13 @@
     </div>
 
     <div class="col-12 col-sm-6">
+      {% if section.readMore %}
+      <a href="{{readMorePage.url | relative_url}}">
+        <img class="img-fluid" src="{{section.caption | relative_url}}" alt="{{ref}}">
+      </a>
+      {% else %}
       <img class="img-fluid" src="{{section.caption | relative_url}}" alt="{{ref}}">
+      {% endif %}
     </div>
   </div>
   {% endfor %}

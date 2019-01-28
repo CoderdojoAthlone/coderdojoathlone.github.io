@@ -5,4 +5,4 @@ fullName:   Matthew Swart
 caption:    assets/images/scratch-class.png
 ---
 
-Profile to come
+Profile description to come

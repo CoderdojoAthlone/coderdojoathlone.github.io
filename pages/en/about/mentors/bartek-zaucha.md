@@ -5,4 +5,4 @@ fullName:   Bartek Zaucha
 caption:    assets/images/scratch-class.png
 ---
 
-Profile to come
+Profile description to come
