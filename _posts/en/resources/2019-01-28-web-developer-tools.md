@@ -3,6 +3,7 @@ layout:       default
 lang:         en
 ref:          web-developer-tools
 title:        Web developer tools
+author:       Marc Raffalli
 description:  Learn about the standard web development tools and their tips and tricks. 
 date:         2019-01-28
 parent:       resources

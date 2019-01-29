@@ -11,6 +11,10 @@
     &-body {
       background-color: darken($color_dark, 10);
       color: $color_light;
+
+      > div {
+        max-width: $screen-xl;
+      }
     }
 
     &-content {

@@ -3,14 +3,16 @@
 {% endif %}
 
 <ul class="cda-article-list list-unstyled">
-  {% for article in include.list %}
+  {% for post in include.list %}
 
   <li class="my-2 py-2 border-bottom border-secondary">
-    <h4 class="h4"><a href="{{article.url | relative_url}}">{{article.title}}</a></h4>
-    {% if article.description %}
-    <div>{{article.description}}</div>
+    <strong><a href="{{post.url | relative_url}}">{{post.title}}</a></strong>
+    <div class="small text-secondary">
+      {% if post.author %}Authored by: {{post.author}} - {% endif %}{{post.date | date: "%Y-%m-%d"}}
+    </div>
+    {% if post.description %}
+    <div class="small">{{post.description}}</div>
     {% endif %}
-    <div class="small text-secondary text-right">{{article.date | date: "%Y-%m-%d"}}</div>
   </li>
 
   {% endfor %}
