@@ -5,11 +5,12 @@
 <ul class="cda-article-list list-unstyled">
   {% for article in include.list %}
 
-  <li class="my-2">
-    <a href="{{article.url | relative_url}}">
-      <h4 class="h4">{{article.title}}</h4>
-      <p>{{article.description}}</p>
-    </a>
+  <li class="my-2 py-2 border-bottom border-secondary">
+    <h4 class="h4"><a href="{{article.url | relative_url}}">{{article.title}}</a></h4>
+    {% if article.description %}
+    <div>{{article.description}}</div>
+    {% endif %}
+    <div class="small text-secondary text-right">{{article.date | date: "%Y-%m-%d"}}</div>
   </li>
 
   {% endfor %}
