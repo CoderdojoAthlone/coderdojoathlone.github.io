@@ -1,7 +1,7 @@
 ---
 lang:       en
 ref:        partial-class-electronic
-caption:    assets/images/ait-eng-building.png
+caption:    assets/images/electronic-class.png
 readMore:   class-electronic
 ---
 

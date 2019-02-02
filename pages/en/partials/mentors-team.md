@@ -5,4 +5,4 @@ caption:    assets/images/ait-eng-building.png
 readMore:   mentors-team
 ---
 
-Check out out team of volunteers!
+Check out our team of volunteers!
