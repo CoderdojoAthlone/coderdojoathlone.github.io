@@ -19,5 +19,5 @@ Contact [`coderdojoathlone@gmail.com`](mailto:coderdojoathlone@gmail.com) to lea
 %}
 
 {% include profile.html 
-   names="bartek-zaucha,derek-goode,ian-campbell,mahesh-kumar-l,marc-raffalli,marie-pidgeon,matthew-swart,ronan-lillis" 
+   names="bartek-zaucha,derek-goode,iain-campbell,mahesh-kumar-l,marc-raffalli,marie-pidgeon,matthew-swart,ronan-lillis" 
 %}
