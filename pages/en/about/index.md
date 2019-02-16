@@ -3,6 +3,7 @@ layout:     default
 lang:       en
 ref:        about
 title:      About
+keywords:   about, history, mentors, team
 parent:     index
 breadcrumb: true
 permalink:  /en/about/

@@ -17,10 +17,41 @@
 title:      Coderdojo Athlone
 copyright:  © 2019 - Coderdojo Athlone
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >-
+  Official page for Coderdojo Athlone.
+  Come and join us on Saturday's and discover how to code and make games!
+
+baseKeywords:
+  - ait
+  - arduino
+  - association
+  - athlone
+  - code
+  - coderdojo
+  - coding
+  - computer
+  - css
+  - development
+  - discover
+  - electronics
+  - fun
+  - game
+  - git
+  - html
+  - javascript
+  - kid
+  - learn
+  - mentor
+  - mysql
+  - php
+  - project
+  - python
+  - raspberry
+  - science
+  - scratch
+  - volunteer
+  - web
+  - westmeath
 
 baseurl: "" # the subpath of your site, e.g. /blog
 

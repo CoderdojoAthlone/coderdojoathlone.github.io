@@ -3,6 +3,7 @@ layout:     default
 lang:       en
 ref:        mentors-team
 title:      Mentors
+keywords:   join, team, help, volunteering, parents
 parent:     about
 breadcrumb: true
 permalink:  /en/about/mentors

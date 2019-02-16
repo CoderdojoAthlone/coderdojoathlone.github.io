@@ -6,8 +6,11 @@ layout: compress
 <head>
   <title>{% if page.title %}{{page.title}} - {% endif %}{{site.title}}</title>
 
-  <meta name="description" content="{{page.description}}">
-  <meta name="keywords" content="{{page.keywords | join: ' '}}">
+  {% assign pageDescription=page.description | default: site.description %}
+  <meta name="description" content="{{pageDescription}}">
+
+  {% assign pageKeywords=page.keywords | default: "" | split: "," %}
+  <meta name="keywords" content="{{site.baseKeywords | concat: pageKeywords | join: ', '}}">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
@@ -22,7 +25,6 @@ layout: compress
   {% endif %}
 </head>
 <body class="cda-container-body">
-
 {% assign locales=site.data.locales %}
 {% assign dictionary=site.data.locales[page.lang].dictionary %}
 {% assign translatedPages=site.pages | where:'lang', page.lang %}
