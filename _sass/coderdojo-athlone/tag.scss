@@ -1,0 +1,12 @@
+.cda-tag {
+  display: inline-block;
+  margin: .25rem;
+  padding: 3px 6px;
+  background-color: rgba(white, .1);
+  border-radius: 3px;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+}

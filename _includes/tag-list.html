@@ -1,0 +1,10 @@
+{% if include.tags %}
+{% assign tags=include.tags | join: ' ' | split: ',' %}
+
+<div class="cda-tags">
+  {% for tag in tags %}
+  <div class="cda-tag small">{{tag | strip}}</div>
+  {% endfor %}
+</div>
+
+{% endif %}

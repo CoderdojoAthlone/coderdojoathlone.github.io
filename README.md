@@ -52,28 +52,57 @@ The type `page` is used for main / structural pages, e.g. home, register, etc.
 
 ### Posts
 
-To add new posts, simply add a file in the `__posts` directory that follows the convention `YYYY-MM-DD-name-of-post.md` (or `html`) and includes the necessary front matter.
+The posts are located under `_posts/en` where `en` is for English (more work to support multi languages is required).
+
+Posts are the dynamic content of the site, they are currently split into 2 categories/folders: 
+- `projects`:    article covering a project
+- `resources`:  learning materials and articles
+
+The posts are listed by category and type based on the `parent` property pointing to:
+
+- `pages/en/projects/`
+  - `scratch.md`
+  - `web.md`
+  - `electronic.md`
+- `pages/en/resources/`
+  - `scratch.md`
+  - `web.md`
+  - `electronic.md`
+
+#### Add a new post:
+
+To add new posts, follow the steps:
+
+- create a file under `_posts/en/projects` or `_posts/en/resources` 
+- the file name should follow the convention `YYYY-MM-DD-name-of-post.md` (or `html`).
+
+The front matter must be present at the very top of the file:
 
 ```
     ---
-    layout:     default
-    lang:       en
-    ref:        sample-project
-    title:      Sample project
-    date:       2019-01-01
-    parent:     projects
-    breadcrumb: true
-    permalink:  /en/projects/sample-project/
+    layout:       article
+    lang:         en
+    parent:       scratch-resources
+    breadcrumb:   true
+    permalink:    /en/resources/scratch-resources/sample-resource/
+    ref:          sample-resource
+    title:        Sample resource
+    author:       John Doe
+    description:  A brief description of the article, will be displayed in the list.
+    tags:         scratch, motions, sprites, colors
     ---
 ```
 
-- `lang`:       language code
-- `ref`:        unique identifier for the post
-- `title`:      title of the page (as in browser tab)
-- `date`:       date of the post as `YYYY-MM-DD`
-- `parent`:     `ref` of the parent page (used for navigation)
-- `breadcrumb`: display the page breadcrumb
-- `permalink`:  URL of the post
+- `layout`     : (`article`) sets the layout of the rendered page
+- `lang`       : language of the post / should match the language folder it is stored into
+- `parent`     : refers to the ref of the parent page, e.g. `scratch-resources`, `web-projects`
+- `breadcrumb` : (`true`) show the navigation breadcrumb
+- `permalink`  : URL of the post, should be `/lang/category/parent/ref` 
+- `ref`        : unique identifier for the post
+- `title`      : title of the page (as in browser tab)
+- `author`     : author name
+- `description`: brief description of the post, will be displayed in the list         
+- `tags`       : tags/keywords reflecting the post content   
 
 
 ## Structure

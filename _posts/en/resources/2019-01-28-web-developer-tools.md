@@ -1,14 +1,14 @@
 ---
-layout:       default
+layout:       article
 lang:         en
+parent:       web-resources
+breadcrumb:   true
+permalink:    /en/resources/web-resources/web-developer-tools/
 ref:          web-developer-tools
 title:        Web developer tools
 author:       Marc Raffalli
-description:  Learn about the standard web development tools and their tips and tricks. 
-date:         2019-01-28
-parent:       resources
-breadcrumb:   true
-permalink:    /en/resources/web-developer-tools/
+description:  Learn about the standard web development tools and their tips and tricks.
+tags:         html, css, tools, theme
 ---
 
 ### Chrome DevTools

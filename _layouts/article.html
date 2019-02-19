@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+{% include article-details.html article=page %}
+
+<div class="mb-3">
+  {% include tag-list.html tags=page.tags %}
+</div>
+
+{{content}}
+
+{% assign translatedPosts=site.posts | where: 'lang',   page.lang %}
+{% assign list=translatedPosts       | where: 'parent', page.parent %}
+
+{% assign index=false %}
+
+{% for item in list %}
+
+{% if item.ref==page.ref %}
+{% assign index=forloop.index0 %}
+{% break %}
+{% endif %}
+
+{% endfor %}
+
+{% assign previousIndex=index | minus: 1 %}
+{% assign nextIndex=index | plus: 1 %}
+
+{% if previousIndex >= 0 or nextIndex < list.size %}
+<footer class="d-flex flex-wrap my-5">
+  {% if previousIndex >= 0 %}
+  <div class="flex-grow-1 mb-2 mr-3">
+    <div class="d-flex align-items-center">
+      {% assign previousArticle=list[previousIndex] %}
+      <div class="pr-2"><i class="fas fa-chevron-left"></i></div>
+      <div>
+        {% include article-header.html article=previousArticle %}
+        {% include article-details.html article=previousArticle %}
+        {% include article-description.html article=previousArticle %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% if nextIndex < list.size %}
+  <div class="flex-grow-1 mb-2 ml-3">
+    {% assign nextArticle=list[nextIndex] %}
+    <div class="d-flex align-items-center justify-content-end">
+      <div class="">
+        {% include article-header.html article=nextArticle %}
+        {% include article-details.html article=nextArticle %}
+        {% include article-description.html article=nextArticle %}
+      </div>
+      <div class="pl-2">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</footer>
+{% endif %}

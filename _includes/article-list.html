@@ -1,0 +1,32 @@
+{% if include.title %}
+<h3 class="h3">{{include.title}}</h3>
+{% endif %}
+
+{% assign arrLimit=include.limit | default: include.list.size %}
+
+<div class="mb-4">
+  {% if include.list.size == 0 %}
+  <div class="text-secondary align-self-center">{{include.noData}}</div>
+  {% else %}
+  <div class="cda-article-list row align-content-stretch">
+    {% for article in include.list limit: arrLimit %}
+
+    <div class="col-12 col-md-10 col-lg-6 mb-2">
+      <div class="border-bottom border-secondary h-100 pb-2">
+
+        {% include article-header.html      article=article %}
+        {% include article-details.html     article=article %}
+        {% include article-description.html article=article %}
+        {% include tag-list.html            tags=article.tags %}
+      </div>
+    </div>
+
+    {% endfor %}
+
+    {% if arrLimit <= include.list.size %}
+    <a href="{{include.showMoreUrl | relative_url}}"
+       class="col-12 col-md-10 col-lg-6 align-self-center text-center py-2">{{include.showMore}}</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

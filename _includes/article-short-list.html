@@ -1,0 +1,14 @@
+{% assign translatedPages=site.pages | where: 'lang', page.lang %}
+{% assign translatedPosts=site.posts | where: 'lang', page.lang %}
+
+{% assign translatedParentTopicPage=translatedPages | where: 'ref', include.parentPage | first %}
+{% assign list=translatedPosts                      | where: 'parent', include.parentPage %}
+
+{% include article-list.html
+title=include.title
+list=list
+limit=include.limit
+showMoreUrl=translatedParentTopicPage.url
+showMore=include.showMore
+noData=include.noData
+%}
