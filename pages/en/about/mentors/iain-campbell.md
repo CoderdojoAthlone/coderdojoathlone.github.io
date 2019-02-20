@@ -1,7 +1,7 @@
 ---
 lang:       en
-ref:        ian-campbell
-fullName:   Ian Campbell
+ref:        iain-campbell
+fullName:   Iain Campbell
 caption:    assets/images/mentors/ian-campbell.jpg
 ---
 
