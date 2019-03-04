@@ -22,7 +22,7 @@ tags:         electronics, components,circuits
 <img class="img-fluid" src="{{'assets/posts/basic-electronic-components/basic-electronics.png' | relative_url}}"/>
 
 * Some of the team have found other useful references too (we will collate these and share these in another post ).
-* We have built a lot of different circuits virtually using [Tinkercad](http://www.tinkercad.com) and it's helped us to understand how each of the components can be used to work together. 
+* We have built a lot of different circuits virtually using [Tinkercad](http://www.tinkercad.com) and it has helped us to understand how each of the components can be used to work together. 
 * The circuits we've built virtually in already will be posted up on the site later. We will be revisiting circuits and building real circuits later.
 * The following page on the Instructable site provides a useful summary and reference of what has been covered to date: 
     * **[Instructables Basic Electronics](https://www.instructables.com/id/Basic-Electronics/)**
