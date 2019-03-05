@@ -60,6 +60,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  CoderdojoAthlone
 github_repo:      'https://github.com/CoderdojoAthlone/coderdojoathlone.github.io'
 
+google_analytics: UA-135278375-1
+
 # Build settings
 markdown: kramdown
 
