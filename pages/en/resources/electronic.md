@@ -5,7 +5,7 @@ ref:        electronic-resources
 title:      Electronic Resources
 parent:     resources
 breadcrumb: true
-permalink:  /en/resources/electronic/
+permalink:  /en/resources/electronic-resources/
 ---
 
 {% include article-short-list.html
