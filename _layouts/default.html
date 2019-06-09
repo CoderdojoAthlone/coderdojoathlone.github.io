@@ -20,6 +20,10 @@ layout: compress
   <link rel="stylesheet" href="{{'/assets/vendors/font-awesome/css/font-awesome.min.css' | relative_url}}">
   <link rel="icon" href="{{'/assets/images/favicon.ico' | relative_url}}" type="image/x-icon">
 
+  {% if page.code %}
+  <link rel="stylesheet" href="{{'/assets/vendors/syntax-highlighting/monokai.css' | relative_url}}">
+  {% endif %}
+
   {% if site.google_analytics and jekyll.environment == 'production' %}
   {% include analytics.html %}
   {% endif %}
