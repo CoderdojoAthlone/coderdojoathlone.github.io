@@ -13,8 +13,8 @@ permalink:  /en/about/web-classes
 {% assign translatedPages=allPages | where: 'lang', page.lang %}
 
 {% assign info=translatedPages          | where: 'ref',    'partial-class-web' | first %}
-{% assign projectPosts=translatedPages  | where: 'parent', 'projects' %}
-{% assign resourcePosts=translatedPages | where: 'parent', 'resources' %}
+{% assign projectPosts=translatedPages  | where: 'parent', 'web-projects' %}
+{% assign resourcePosts=translatedPages | where: 'parent', 'web-resources' %}
 
 <div class="row">
   <div class="col">
