@@ -14,7 +14,7 @@
 
 {% assign p=translatedSet | where:'ref', p.parent | first %}
 
-{% if p==nil %}
+{% if p.parent==nil %}
 {% break %}
 {% endif %}
 
