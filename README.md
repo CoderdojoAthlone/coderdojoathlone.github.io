@@ -15,6 +15,9 @@ Both `Markdown` and `HTML` files are used based on the need, both can embed Liqu
 Styles from Bootstrap:
 https://getbootstrap.com/docs/ 
 
+GitHub Pages dependency version:
+https://pages.github.com/versions/
+
 ### Syntax highlighting
 
 Jekyll also offers powerful support for code snippets:
