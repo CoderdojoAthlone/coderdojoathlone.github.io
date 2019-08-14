@@ -5,7 +5,7 @@ ref:        web-resources
 title:      Web Resources
 parent:     resources
 breadcrumb: true
-permalink:  /en/resources/web/
+permalink:  /en/resources/web-resources/
 ---
 
 {% include article-short-list.html

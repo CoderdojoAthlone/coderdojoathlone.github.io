@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Interval timer - Coderdojo Athlone</title>
+</head>
+<body>
+
+<div class="main-container">
+
+  <div class="timer-status">
+    <div class="timer-overview">
+      <div id="timeOverviewMessage">Finish!</div>
+
+      <div class="box" id="elapsedInIntervalBox">
+        <header>&nbsp;</header>
+        <span id="elapsedInInterval"></span>s
+      </div>
+
+      <div class="box" id="elapsedInBreakIntervalBox">
+        <header>Break time</header>
+        <span id="elapsedInBreakInterval"></span>s
+      </div>
+    </div>
+
+    <div class="timer-additional-info">
+      <!--  Information about interval  -->
+      <div class="box left-align">
+        <header>Intervals</header>
+        <div id="intervals"></div>
+      </div>
+      <div class="box">
+        <header>Intervals done</header>
+        <div id="intervalsDone"></div>
+      </div>
+      <div class="box">
+        <header>Intervals remaining</header>
+        <div id="intervalsRemaining"></div>
+      </div>
+
+      <!--  Information about time  -->
+      <div class="box left-align">
+        <header>Total time</header>
+        <span id="totalTime"></span>s
+      </div>
+      <div class="box">
+        <header>Total time elapsed</header>
+        <span id="totalTimeElapsed"></span>s
+      </div>
+      <div class="box">
+        <header>Total time remaining</header>
+        <span id="totalTimeRemaining"></span>s
+      </div>
+    </div>
+  </div>
+
+  <div class="timer-controls">
+    <button type="button" id="startBtn">Start</button>
+    <button type="button" id="pauseBtn">Pause</button>
+    <button type="button" id="stopBtn">Stop</button>
+  </div>
+
+  <div class="settings-form">
+    <div class="form-line">
+      <label for="intervalCountInput">Interval count:</label>
+      <input type="number" id="intervalCountInput" min="1">
+    </div>
+
+    <div class="form-line">
+      <label for="intervalDurationInput">Interval duration:</label>
+      <input type="number" id="intervalDurationInput" min="1">
+    </div>
+
+    <div class="form-line">
+      <label for="enableBreakInput">Enable break:</label>
+      <input type="checkbox" id="enableBreakInput">
+    </div>
+
+    <div class="form-line" id="breakDurationInputLine">
+      <label for="breakDurationInput">Break duration:</label>
+      <input type="number" id="breakDurationInput" min="1">
+    </div>
+  </div>
+</div>
+<footer class="app-footer">
+  <span>© 2019 - Coderdojo Athlone</span>
+  <a href="/en/resources/web-resources/tutorial-interval-timer/">Open the tutorial</a>
+</footer>
+
+<script src="./interval-timer-app.js"></script>
+</body>
+</html>
