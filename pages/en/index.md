@@ -8,10 +8,10 @@ permalink:  /en/
 ---
 
 {% include alert.html
-   type="warning"
+   type="success"
    content="
-   We are off for the summer and look forward to see you in September.
-   Please [register](./register/) and we will let you know when we are back!
+   We are back!
+   Please [register](./register/) to receive our updates and check our [calendar](./about/classes).
    "
 %}
 
