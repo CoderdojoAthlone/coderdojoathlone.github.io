@@ -19,5 +19,5 @@ Our aim is to provide a space for kids to meet and learn together in an informal
 Our volunteer mentors are available to share their knowledge and all children are encouraged to become mentors as they advance.
 
 {% include split-50.html 
-   sections="partial-class-information,partial-mentors-team" 
+   sections="class-list,partial-class-information,partial-mentors-team" 
 %}
