@@ -17,6 +17,10 @@
       > div {
         max-width: $screen-xl;
       }
+
+      hr {
+        border-top: 1px solid rgba($color_light, .4);
+      }
     }
 
     &-content {
