@@ -102,7 +102,7 @@ The following shows the a breadboard component diagram which will be used for th
 
 ### Code
 
-The following code snippet can be used  (note it's incomplete)
+* The following code snippet can be used  (note it's partially incomplete - you can complete yourself)
 
 ```
 
