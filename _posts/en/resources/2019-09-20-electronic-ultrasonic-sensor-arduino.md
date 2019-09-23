@@ -3,8 +3,8 @@ layout:       article
 lang:         en
 parent:       electronic-resources
 breadcrumb:   true
-permalink:    /en/projects/electronic/ultrasonic-sensor-2019
-ref:          2020-ultrasonic-sensor-arduino
+permalink:    /en/resources/electronic-resources/ultrasonic-sensor-2019
+ref:          2019-ultrasonic-sensor-arduino
 title:        Ultrasonic sensor with Arduino
 author:       Iain Campbell
 description:  How to use an ultrasonic sensor to detect motion
@@ -20,23 +20,23 @@ This project will use an ultrasonic range sensor as a proximity meter.
 
 
 ### Components
-THe following components are required for this project
+The following components are required for this project
 * Arduino Uno R3
 * HC-SR04 Ultrasonic Sensor 
 * 1 kΩ Resistor (x 3)
 * Green LED
 * Yellow LED
-* Red LED3
+* Red LED
 * Piezo buzzer
 
 ### About this project
 
-This project will use a ultrasonic sensor to detect motion and light different leds and sound a buzzer
+This project will use an ultrasonic sensor to detect motion and light different leds and sound a buzzer
 depending on the distance of an object from the sensor:
   
 We will use Green, Yellow, Red leds and buzzer to signal distance of object as follows: 
  * Light the GREEN LED if the object is greater than 100cm away from sensor
- * Light the YELLOW LED if the object is btween 70cm and  100cm away from sensor
+ * Light the YELLOW LED if the object is between 70cm and  100cm away from sensor
  * Light the RED LED if the object is less than 70cm away from the sensor and sound the buzzer
  
 
@@ -82,12 +82,10 @@ The ultrasonic sensor uses sonar to determine the distance to an object. Here’
 #### HC-SR04 Timing diagram
 
 * The circuit needs to supply a short 10uS pulse to the trigger input to start the ranging, and then the module will send out
-an 8 cycle burst of ultrasound at 40 kHz and raise its echo. 
-* The Echo is avdistance object that is pulse width and the range in proportion .You can
-calculate the range through the time interval between sending trigger signal and
-receiving echo signal. Formula: uS / 58 = centimeters or uS / 148 =inch; or: the
-range = high level time * velocity (340M/S) / 2; we suggest to use over 60ms
-measurement cycle, in order to prevent trigger signal to the echo signal. 
+an 8 cycle burst of ultrasound at 40 kHz.
+
+* The signal emitted hits the target object and is reflected back to the sensor. Ultrasonic Sensors measure the distance to the target by measuring the time between the emission and reception.
+
 
 <img class="img-fluid" src="{{'assets/posts/2019-09-20-arduino-ultrasonic-sensor/ultrasonic-timing-diagram.png' | relative_url}}"/>
 
@@ -95,7 +93,7 @@ measurement cycle, in order to prevent trigger signal to the echo signal.
 
 ### Component diagram
 
-The following shows the a breadboard component diagram which will be used for this project.
+The following shows a breadboard component diagram which will be used for this project.
 
 <img class="img-fluid" src="{{'assets/posts/2019-09-20-arduino-ultrasonic-sensor/ultrasonic-range-sensor.png' | relative_url}}"/>
 
@@ -180,5 +178,5 @@ void yellow(){
 
 ### Resources
 * Lookup the data sheet for the HC-SR04 to find more out about its specifications and how to operate.
-* Prior to building the circuit for real, you could use [Tinkercad](http://tinkercad.com) to prototype
+* Prior to building the circuit for real, we strongly recommend. [Tinkercad](http://tinkercad.com) to prototype
 * The project could be extended to display the object distance on an LCD screen
