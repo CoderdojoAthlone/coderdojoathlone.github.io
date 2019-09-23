@@ -12,7 +12,7 @@ tags:         Arduino, electronic, ultrasonic sensor, led, buzzer
 code:         true
 ---
 
-## Ardunino Ultrasonic range sensor 
+## Arduino Ultrasonic range sensor 
 
 This project will use an ultrasonic range sensor as a proximity meter.
 
