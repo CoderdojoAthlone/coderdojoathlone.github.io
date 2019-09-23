@@ -84,7 +84,8 @@ The ultrasonic sensor uses sonar to determine the distance to an object. Here’
 * The circuit needs to supply a short 10uS pulse to the trigger input to start the ranging, and then the module will send out
 an 8 cycle burst of ultrasound at 40 kHz.
 
-* The signal emitted hits the target object and is reflected back to the sensor. Ultrasonic Sensors measure the distance to the target by measuring the time between the emission and reception.
+* When the signal emitted hits the target object, it is reflected back to the sensor. 
+* Ultrasonic Sensors measure the distance to the target by measuring the time between the emission and reception.
 
 
 <img class="img-fluid" src="{{'assets/posts/2019-09-20-arduino-ultrasonic-sensor/ultrasonic-timing-diagram.png' | relative_url}}"/>
@@ -102,7 +103,7 @@ The following shows a breadboard component diagram which will be used for this p
 
 * The following code snippet can be used  (note it's partially incomplete - you can complete yourself)
 
-```
+```c
 
 int buzzer = 3, ledRed = 6, ledYellow = 9, ledGreeen = 10;
 int triggerPin = 4;
@@ -178,5 +179,5 @@ void yellow(){
 
 ### Resources
 * Lookup the data sheet for the HC-SR04 to find more out about its specifications and how to operate.
-* Prior to building the circuit for real, we strongly recommend. [Tinkercad](http://tinkercad.com) to prototype
+* Prior to building the circuit for real, we strongly recommend [Tinkercad](http://tinkercad.com) to prototype.
 * The project could be extended to display the object distance on an LCD screen
