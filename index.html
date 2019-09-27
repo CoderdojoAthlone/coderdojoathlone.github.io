@@ -3,7 +3,9 @@ layout:     default
 ---
 
 <script>
-  window.location.href = window.location.href + 'en';
+    if (location.pathname === '/') {
+        location.href = `/en/${location.search}`;
+    }
 </script>
 
 <div class="row mx-3">
