@@ -1,3 +1,18 @@
+---
+layout:       article
+lang:         en
+parent:       electronic-resources
+breadcrumb:   true
+permalink:    /en/resources/electronic-resources/relay-led-blink-2019
+ref:          2019-relay-led-blink
+title:        Relay LED Blink
+author:       Iain Campbell
+description:  How to use a relay to make an LED blink 
+tags:         Electronic, LED, relay
+code:         true
+---
+
+
 ### Relay circuit to make a LED Blink
 
 This project will demonstrate how a *relay* can be used in a circuit to make a LED blink.
@@ -9,11 +24,14 @@ can turn on or off a much larger electric current. The heart of a relay is an el
 
 {% include alert.html
   type="info"
-  content="Note: Tinkercad doesn't simulate LED relays operation very well soit's best this circuit is built using real components.
+  content="Note: Tinkercad doesn't simulate relays operation very well so it's best this circuit is built using real components.
            We've found it doesn't work properly in Tinkercad!"
 %}
 
 Read further information about relays [here](https://electronicsclub.info/relays.htm)
+
+### Components
+
 
 Components required for this experiment include:
 * Relay (9V coil)
@@ -41,10 +59,10 @@ The breadboard diagram is shown below:
 ## How it works 
 * At first when you connect the battery, current will run through R2 and C1 back to the battery.
 * In the very beginning when the capacitor is without charge, almost all the current will flow through it instead of the relay-coil. 
-But, as the capacitor is charging, more current will start to flow through the relay-coil instead.
+  But, as the capacitor is charging, more current will start to flow through the relay-coil instead.
 * When enough current is running through the relay-coil, the electromagnet will pull the switch so it changes position.
 * Now, since the capacitor has some energy built up, it will make the electromagnet keep pulling the switch even though the battery was disconnected from it. 
-While the switch is in this position,current will flow from the battery to R1 and the LED and the LED will light up.
+  While the switch is in this position,current will flow from the battery to R1 and the LED and the LED will light up.
 * When there is no more energy left in the capacitor, the electromagnet stops pulling and the switch goes back to its original position again.
 * The cycle repeats itself!
 
@@ -57,13 +75,12 @@ you know which pin is which.
   
   <img class="img-fluid" src="{{'assets/posts/2019-09-25-relay-led-blink/relayArrangement.png' | relative_url}}"/>
   
-
 2. Note: Not all relays are fitted for easy use on a breadboard, so you might need to bend the legs a little
 bit to get it to fit into the breadboard. 
 3. Mentors may provide some relays which has wires soldered to it as an alternative.
 4. Start by connecting the battery connector to the supply rail on the side. The red wire is the
 positive terminal, the black wire is the negative one.
-4. Next, place the relay on the breadboard. Then connect the resistor (R2) from pin 4 to pin 2 of the
+5. Next, place the relay on the breadboard. Then connect the resistor (R2) from pin 4 to pin 2 of the
 relay. Connect a wire from the positive supply rail to the relay input (pin 3) and from the negative
 supply rail to the relay coil (pin 1).
 6. Add the capacitor over the relay coil. The relay coil doesn't have a positive or negative side, but
@@ -80,8 +97,8 @@ negative battery terminal (as shown in the diagram above).
 ## Troubleshooting
 
 * It's easy to make a mistake when connecting a circuit for the first time.
-A common mistake is to connect the LED the wrong way. Make sure your LED is connected the right way, with the long
-leg to the resistor and the short leg to the negative supply rail.
+  A common mistake is to connect the LED the wrong way. 
+  Make sure your LED is connected the right way, with the long leg to the resistor and the short leg to the negative supply rail.
 * Another common mistake is to connect the two output pins from the relay the other way around. Double check that you have this connection correctly connected.
 * When you have checked that all your connections are okay, connect the battery. You should now hear a ticking of the relay and your LED should be flashing.
 
