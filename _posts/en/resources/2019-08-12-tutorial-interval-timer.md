@@ -4,7 +4,7 @@ lang:         en
 parent:       web-resources
 breadcrumb:   true
 permalink:    /en/resources/web-resources/tutorial-interval-timer/
-ref:          web-developer-tools
+ref:          tutorial-interval-timer
 title:        (Tutorial) Interval timer
 author:       Marc Raffalli
 description:  Learn how to implement an interval timer from scratch using plain simple JavaScript methods.
@@ -1070,3 +1070,14 @@ but also how to break a problem into small digestible chunks.
 We welcome feedback on how we could improve this tutorial so feel free to share your thoughts with one of the web mentors.
 
 Keep on learning!
+
+### Full example
+
+See the full example with code sandbox in [CodePen](https://codepen.io/marc-ed-raffalli/pen/bGbywmL).
+
+<p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="js,result" data-user="marc-ed-raffalli" data-slug-hash="bGbywmL" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="(Tutorial) Interval timer">
+  <span>See the Pen <a href="https://codepen.io/marc-ed-raffalli/pen/bGbywmL">
+  (Tutorial) Interval timer</a> by Marc Ed Raffalli (<a href="https://codepen.io/marc-ed-raffalli">@marc-ed-raffalli</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
