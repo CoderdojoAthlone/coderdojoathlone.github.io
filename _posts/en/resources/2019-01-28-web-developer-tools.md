@@ -34,7 +34,10 @@ Mouse over the three dots on the bottom right of any element CSS rules
 #### Sources
 
 - Open any loaded file using `Ctrl + o`
-- Follow the execution of JS step by step using the debugger and breakpoints
+- Follow the execution of JS step by step using the debugger and breakpoints. Click on the gutter to set a breakpoint
+
+  <img class="img-fluid" src="{{'assets/posts/web-developer-tools/debugger-breakpoint.png' | relative_url}}"/>
+  
 - Right click on the breakpoints to add a stopping condition with `Edit breakpoint...`
 
 #### Network

@@ -34,22 +34,22 @@ The following provides useful resources when learning about [Arduino](https://ww
 
 ##### Microcontroller Projects
    1. **Getting started**
-      * [Arduino "Getting started" (pages 1-6)](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Arduino "Getting started" (pages 1-6)](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    2. **Arduino Blinking LED project**  
       * [LEDs & Breadboards With Arduino in Tinkercad](https://www.youtube.com/watch?v=MojSo7OtF9w)     
-      * [Coder Dojo Arduino "LED blink"](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Coder Dojo Arduino "LED blink"](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    3. **Arduino Traffic Lights**
-      * [Coder Dojo Arduino "Traffic lights"  (pages 7-8) ](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Coder Dojo Arduino "Traffic lights"  (pages 7-8) ](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    4. **Controlling an LED with a Potentiometer***
-      * [Coder Dojo "Arduino LED with Potentiometer"](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Coder Dojo "Arduino LED with Potentiometer"](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    5. **Temperature Sensor**
-      * [Coder Dojo "Arduino temperature sensor"](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Coder Dojo "Arduino temperature sensor"](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    6. **Ultrasonic Range Sensor**
-      * [Coder Dojo "Arduino Ultrasonic Range sensor"](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)      
+      * ["Arduino Ultrasonic Range sensor"](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)      
    7. **Servo motor**
-      * [Coder Dojo "Arduino and Servo"](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Coder Dojo "Arduino and Servo"](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    8. **LCD (Liquid Crystal Display)**
-      * [Coder Dojo Liquid Cyrstal Display](http://kata.coderdojo.com/images/6/6a/ArduinoCards.pdf)
+      * [Coder Dojo Liquid Cyrstal Display](https://github.com/CoderDojo/kata-archive/blob/master/files/ArduinoCards.pdf)
    9. **Arduino Seven Segment Display project**
       * AllAboutCircuits site has a resource which describes how to interface a seven segment display with an arduino: [Interface a seven segment display with an arduino](https://www.allaboutcircuits.com/projects/interface-a-seven-segment-display-to-an-arduino/)
 
