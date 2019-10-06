@@ -3,6 +3,7 @@
 {% assign translatedAbout=translatedPages     | where: 'ref','about'     | first %}
 {% assign translatedProject=translatedPages   | where: 'ref','projects'  | first %}
 {% assign translatedResources=translatedPages | where: 'ref','resources' | first %}
+{% assign translatedChallenges=translatedPages | where: 'ref','challenges' | first %}
 
 <header class="cda-header text-white">
   <div class="d-flex align-items-baseline">
@@ -12,13 +13,16 @@
       </h1>
     </div>
 
-    <div class="">
-      {% include header-link.html page=translatedRegister %}
+    <div class="bg-secondary">
+      {% if page.ref != 'register' %}
+      <button class="btn btn-light">{% include header-link.html page=translatedRegister %}</button>
+      {% endif %}
     </div>
   </div>
   <nav class="d-flex align-items-baseline mt-2">
     {% include header-link.html page=translatedAbout %}
     {% include header-link.html page=translatedProject %}
     {% include header-link.html page=translatedResources %}
+    {% include header-link.html page=translatedChallenges %}
   </nav>
 </header>
