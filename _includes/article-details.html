@@ -1,4 +1,5 @@
 <div class="small text-secondary">
   {{include.article.date | date: "%Y-%m-%d"}}
   {% if include.article.author %} - Authored by: {{include.article.author}}{% endif %}
+  {% if include.article.submitBy %}Submission date: {{include.article.submitBy}}{% endif %}
 </div>

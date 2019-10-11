@@ -4,7 +4,7 @@ lang:       en
 ref:        register
 title:      Register
 parent:     index
-breadcrumb: true
+breadcrumb: false
 permalink:  /en/register/
 ---
 
