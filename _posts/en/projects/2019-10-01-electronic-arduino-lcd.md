@@ -3,10 +3,10 @@ layout:       article
 lang:         en
 parent:       electronic-projects
 breadcrumb:   true
-permalink:    /en/projects/scratch-projects/lcd-arduino-2019
+permalink:    /en/projects/electronic/lcd-arduino-2019
 ref:          2019-lcd-arduino
 title:        LCD Arduino
-author:       fionnc/Iain Campbell
+author:       fionnc, tristan, Iain Campbell
 description:  How to use an LCD and Arduino to display a message
 tags:         Arduino, electronic, lcd
 code:         true
@@ -19,6 +19,16 @@ LCDs like these are very popular and broadly used in electronics projects as the
  
 
 <img class="img-fluid" src="{{'assets/posts/2019-10-01-arduino-lcd/lcd-coderdojo-message.png' | relative_url}}"/>
+
+
+### More about the project
+
+The Arduino has a function known as a serial monitor, an area of the Arduino application in which data can be displayed. 
+However, when the Arduino is not attached to a computer, this feature cannot be used as there is no display to show these variables on.
+We decided to solve this issue by attaching a Liquid Crystal Display, or LCD, to the Arduino board and having this display the contents of the serial monitor.
+Normally, the LCD is only used with the larger Arduino Mega due to the large amount of pins and ports needed to control the inputs to the LCD. 
+We were able to adapt the circuit to a standard Arduino Uno without loss of functionality, but using the Mega is recommended if other circuits are necessary to acquire data for the LCD to display.
+We also added a potentiometer to the circuit in order to control the contrast of the text to the screen.
 
 
 ### Components
