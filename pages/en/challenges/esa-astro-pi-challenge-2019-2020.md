@@ -7,7 +7,7 @@ parent:       challenges
 breadcrumb:   true
 permalink:    /en/challenges/esa-astro-pi-challenge-2019-2020
 description:  ESA Education and the Raspberry Pi Foundation are happy to announce the launch of the 2019-20 European Astro Pi Challenge!
-submitBy:     20/03/2020
+submitBy:     2020-03-20
 tags:         Raspberry Pi, International Space Station., official, challenge
 ---
 

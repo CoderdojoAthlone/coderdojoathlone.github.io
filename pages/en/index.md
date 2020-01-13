@@ -9,10 +9,13 @@ permalink:  /en/
 
 {% assign translatedPages=site.pages       | where:'lang', page.lang %}
 {% assign aboutClassesPage=translatedPages | where: 'ref', 'class-information'            | first %}
-{% assign challengePage=translatedPages | where: 'ref', 'esa-astro-pi-challenge-2019-2020' | first %}
+{% assign astroPiChallengePage=translatedPages | where: 'ref', 'esa-astro-pi-challenge-2019-2020' | first %}
+{% assign coolestProjectsPage=translatedPages  | where: 'ref', 'coolest-projects-2020' | first %}
 
 {% capture alertMessage %}
-  Take part in the European Astro Pi Challenge, see more details [here]({{challengePage.url | relative_url}})!
+  Take part in the European Astro Pi Challenge, see more details [here]({{astroPiChallengePage.url | relative_url}})!
+  <br/>
+  Coolest Projects registration now open, see more details [here]({{coolestProjectsPage.url | relative_url}})!
 {% endcapture %}
 
 {% include alert.html
