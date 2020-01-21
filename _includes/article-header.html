@@ -1,1 +1,3 @@
-<strong><a href="{{include.article.url | relative_url}}">{{include.article.title}}</a></strong>
+<strong {% if include.article.submitBy %}data-due-date="{{include.article.submitBy}}"{% endif %}>
+  <a href="{{include.article.url | relative_url}}">{{include.article.title}}</a>
+</strong>

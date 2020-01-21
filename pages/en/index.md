@@ -8,20 +8,21 @@ permalink:  /en/
 ---
 
 {% assign translatedPages=site.pages       | where:'lang', page.lang %}
-{% assign aboutClassesPage=translatedPages | where: 'ref', 'class-information' | first %}
-{% assign registerPage=translatedPages     | where: 'ref', 'register'          | first %}
+{% assign aboutClassesPage=translatedPages | where: 'ref', 'class-information'            | first %}
+{% assign astroPiChallengePage=translatedPages | where: 'ref', 'esa-astro-pi-challenge-2019-2020' | first %}
+{% assign coolestProjectsPage=translatedPages  | where: 'ref', 'coolest-projects-2020' | first %}
 
 {% capture alertMessage %}
-  We are back!
-  Please [register]({{registerPage.url | relative_url}})
-  to receive our updates and check our [calendar]({{aboutClassesPage.url | relative_url}})
+  Take part in the European Astro Pi Challenge, see more details [here]({{astroPiChallengePage.url | relative_url}})!
+  <br/>
+  Coolest Projects registration now open, see more details [here]({{coolestProjectsPage.url | relative_url}})!
 {% endcapture %}
 
 {% include alert.html
-   type="success"
+   type="info"
    content=alertMessage
 %}
 
-{% include split-50.html 
-   sections="partial-class-information,partial-class-scratch,partial-class-web,partial-class-electronic" 
+{% include split-50.html
+   sections="partial-class-information,partial-class-scratch,partial-class-web,partial-class-electronic"
 %}

@@ -60,5 +60,9 @@ layout: compress
   <footer class="cda-container-footer small text-secondary p-3">{{site.copyright}}</footer>
 </div>
 
+{% if page.dueDate %}
+<script src="{{'/assets/js/due-date-format.js' | relative_url}}"></script>
+{% endif %}
+
 </body>
 </html>
