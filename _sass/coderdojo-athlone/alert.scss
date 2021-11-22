@@ -1,5 +1,11 @@
+@import "variables";
+
 .cda-alert {
   p:first-of-type:last-of-type {
     margin: 0;
+
+    @media (min-width: $screen-md) {
+      padding-right: 5rem;
+    }
   }
 }
