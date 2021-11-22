@@ -12,12 +12,27 @@ permalink:  /en/about/scratch-classes
 {% assign translatedPages=site.pages | where: 'lang', page.lang %}
 {% assign info=translatedPages | where: 'ref', 'partial-class-scratch' | first %}
 
+{% capture scratch %}
+Scratch is a block-based visual programming language and online community targeted primarily at children.
+Users of the site can create online projects using a block-like interface.
+
+Head over to [scratch.mit.edu](https://scratch.mit.edu/)
+
+If you are new or looking for inspiration, make sure to check out the ["Ideas"](https://scratch.mit.edu/ideas) section
+
+We recommend the following:
+
+- Never share private information, e.g. name, email in your projects
+- Use a pseudonym (not your real name) when choosing your username
+- Use the incognito mode when using a public computer
+{% endcapture %}
+
+
 <div class="row">
   <div class="col">
     {{info.content | markdownify}}
 
-    Scratch is a block-based visual programming language and online community targeted primarily at children.
-    Users of the site can create online projects using a block-like interface.
+    {{scratch | markdownify}}
   </div>
   <div class="col-12 col-sm-4 mt-3 mt-sm-0">
     <img class="img-fluid" src="{{info.caption | relative_url}}" alt="{{info.ref}}">
