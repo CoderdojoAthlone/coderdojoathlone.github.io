@@ -85,6 +85,7 @@ exclude:
 - Gemfile.lock
 - .idea
 - scripts
+- Dockerfile
 - package**.json
 
 sass:

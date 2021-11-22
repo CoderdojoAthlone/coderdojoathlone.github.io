@@ -5,15 +5,16 @@
 This site is generated using Jekyll and hosted as static page on GitHub.
 https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/
 
-Jekyll installation and docs:
-https://jekyllrb.com/docs/
-
-The syntax used for `if`, `else`, `loop` is Liquid:
-https://shopify.github.io/liquid/basics/introduction/
-Both `Markdown` and `HTML` files are used based on the need, both can embed Liquid scripts. 
+- Install [Docker](https://www.docker.com/)
+- Familiarize yourself with
+  - [Jekyll](https://jekyllrb.com/docs/)
+  Site structure / engine
+  - [Liquid](https://shopify.github.io/liquid/basics/introduction/)
+  The syntax used for `if`, `else`, `loop` is Liquid:
+  Both `Markdown` and `HTML` files are used based on the need, both can embed Liquid scripts.
 
 Styles from Bootstrap:
-https://getbootstrap.com/docs/ 
+https://getbootstrap.com/docs/
 
 GitHub Pages dependency version:
 https://pages.github.com/versions/
@@ -34,9 +35,15 @@ print_hi('Tom')
 
 ### Commands
 
+Build Docker container for the local server (only the first time)
+
+```shell
+docker build . -t coderdojoathlone:latest
+```
+
 Start the server:
-```bash
-bundle exec jekyll serve
+```shell
+ docker run -p 4000:4000 --volume="$PWD:/site" coderdojoathlone:latest
 ```
 
 ### Notes
@@ -57,7 +64,7 @@ The type `page` is used for main / structural pages, e.g. home, register, etc.
 
 The posts are located under `_posts/en` where `en` is for English (more work to support multi languages is required).
 
-Posts are the dynamic content of the site, they are currently split into 2 categories/folders: 
+Posts are the dynamic content of the site, they are currently split into 2 categories/folders:
 - `projects`:    article covering a project
 - `resources`:  learning materials and articles
 
@@ -76,7 +83,7 @@ The posts are listed by category and type based on the `parent` property pointin
 
 To add new posts, follow the steps:
 
-- create a file under `_posts/en/projects` or `_posts/en/resources` 
+- create a file under `_posts/en/projects` or `_posts/en/resources`
 - the file name should follow the convention `YYYY-MM-DD-name-of-post.md` (or `html`).
 
 The front matter must be present at the very top of the file:
@@ -100,12 +107,12 @@ The front matter must be present at the very top of the file:
 - `lang`       : language of the post / should match the language folder it is stored into
 - `parent`     : refers to the ref of the parent page, e.g. `scratch-resources`, `web-projects`
 - `breadcrumb` : (`true`) show the navigation breadcrumb
-- `permalink`  : URL of the post, should be `/lang/category/parent/ref` 
+- `permalink`  : URL of the post, should be `/lang/category/parent/ref`
 - `ref`        : unique identifier for the post
 - `title`      : title of the page (as in browser tab)
 - `author`     : author name
-- `description`: brief description of the post, will be displayed in the list         
-- `tags`       : tags/keywords reflecting the post content   
+- `description`: brief description of the post, will be displayed in the list
+- `tags`       : tags/keywords reflecting the post content
 
 
 ## Structure
@@ -122,7 +129,7 @@ Each partial is a short page introduction pointing to the more complete content.
     caption:    assets/images/path-to-caption.png
     readMore:   ref-of-related-page
     ---
-    
+
     Content
 ```
 
@@ -137,7 +144,7 @@ All mentor profiles are stored in `pages/en/about/mentors`.
     fullName:   Display Name
     caption:    assets/images/mentors/path-to-picture.jpg
     ---
-    
+
     Profile description
 ```
 
