@@ -43,7 +43,7 @@ docker build . -t coderdojoathlone:latest
 
 Start the server:
 ```shell
- docker run -p 4000:4000 --volume="$PWD:/site" coderdojoathlone:latest
+docker run -p 4000:4000 --volume="$PWD:/site" coderdojoathlone:latest
 ```
 
 ### Notes

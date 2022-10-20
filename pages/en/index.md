@@ -10,13 +10,18 @@ permalink:  /en/
 {% assign translatedPages=site.pages       | where:'lang', page.lang %}
 
 {% capture covidMessage %}
-  We are delighted to announce our sessions finally resumed!
-  Due to the ongoing COVID restrictions, we operate with booking **only**.
-  Invitations are sent weekly to all registered members, follow the "Register" link above to register.
+  We are looking for volunteers to be able to resume our sessions.
+  [Learn more about becoming a mentor](https://coderdojo.com/en/volunteer).
+
+
+  If you are interested, we would love to welcome you in the team.
+  First, please complete the mandatory [Garda Vetting](https://coderdojo.com/en/gardavetting).
+
+  Contact [coderdojoathlone@gmail.com](mailto:coderdojoathlone@gmail.com) for more details.
 {% endcapture %}
 
 {% include alert.html
-   type="success"
+   type="danger"
    content=covidMessage
 %}
 
