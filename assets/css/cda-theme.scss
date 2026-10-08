@@ -18,3 +18,13 @@ body {
   line-height: 1.2;
 }
 
+
+// Bootstrap 5 underlines links by default; keep the Bootstrap 4 look
+// (underline on hover only).
+body a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
