@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as *;
 
 .cda-alert {
   p:first-of-type:last-of-type {

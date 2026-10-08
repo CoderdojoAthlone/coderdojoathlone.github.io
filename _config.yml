@@ -62,8 +62,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  CoderdojoAthlone
 github_repo:      'https://github.com/CoderdojoAthlone/coderdojoathlone.github.io'
 
-google_analytics: UA-135278375-1
-
 # Build settings
 markdown: kramdown
 kramdown:
@@ -85,6 +83,8 @@ kramdown:
 exclude:
 - Gemfile
 - Gemfile.lock
+- README.md
+- vendor
 - .idea
 - scripts
 - Dockerfile
@@ -93,3 +93,4 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+  sourcemap: never

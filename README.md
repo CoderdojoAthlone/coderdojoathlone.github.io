@@ -2,8 +2,9 @@
 
 ## Getting started
 
-This site is generated using Jekyll and hosted as static page on GitHub.
-https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/
+This site is generated using Jekyll 4 and hosted as a static page on GitHub Pages.
+It is built and deployed by the GitHub Actions workflow in `.github/workflows/pages.yml`
+on every push to `master` (Settings > Pages > Source must be set to "GitHub Actions").
 
 - Install [Docker](https://www.docker.com/)
 - Familiarize yourself with
@@ -13,11 +14,11 @@ https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-gi
   The syntax used for `if`, `else`, `loop` is Liquid:
   Both `Markdown` and `HTML` files are used based on the need, both can embed Liquid scripts.
 
-Styles from Bootstrap:
-https://getbootstrap.com/docs/
+Styles from Bootstrap 5 (vendored in `assets/vendors`):
+https://getbootstrap.com/docs/5.3/
 
-GitHub Pages dependency version:
-https://pages.github.com/versions/
+Icons from Font Awesome Free 7 (vendored in `assets/vendors/font-awesome`):
+https://fontawesome.com/search?ic=free
 
 ### Syntax highlighting
 
@@ -151,4 +152,4 @@ All mentor profiles are stored in `pages/en/about/mentors`.
 ### Styles
 
 The `_sass/coderdojo-athlone` contains the compiled theme (written in SASS).
-`site.scss` is the entry file importing the other stylesheets.
+`site.scss` is the entry file loading the other stylesheets with `@use`.

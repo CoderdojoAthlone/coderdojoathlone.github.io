@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $theme1: (
   positive: #0BC7B1,
   light: #F1F0E2,
@@ -16,8 +18,8 @@ $theme2: (
 
 $theme: $theme2;
 
-$color_positive: map_get($theme, positive);
-$color_light: map_get($theme, light);
-$color_secondary: map_get($theme, secondary);
-$color_warning: map_get($theme, warning);
-$color_dark: map_get($theme, dark);
+$color_positive: map.get($theme, positive);
+$color_light: map.get($theme, light);
+$color_secondary: map.get($theme, secondary);
+$color_warning: map.get($theme, warning);
+$color_dark: map.get($theme, dark);
