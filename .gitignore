@@ -4,3 +4,4 @@ vendor
 .jekyll-metadata
 .idea
 
+.jekyll-cache

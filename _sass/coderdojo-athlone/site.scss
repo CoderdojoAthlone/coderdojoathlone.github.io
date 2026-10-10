@@ -1,17 +1,18 @@
-@import "colors";
-@import "alert";
-@import "code";
-@import "github-edit-banner";
-@import "variables";
-@import "header";
-@import "split-50";
-@import "profile";
-@import "tag";
+@use "sass:color";
+@use "colors" as *;
+@use "alert";
+@use "code";
+@use "github-edit-banner";
+@use "variables" as *;
+@use "header";
+@use "split-50";
+@use "profile";
+@use "tag";
 
 .cda {
   &-container {
     &-body {
-      background-color: darken($color_dark, 10);
+      background-color: color.adjust($color_dark, $lightness: -10%);
       color: $color_light;
 
       > div {
@@ -25,7 +26,7 @@
 
     &-content {
       position: relative;
-      background-color: darken($color_dark, 5);
+      background-color: color.adjust($color_dark, $lightness: -5%);
       box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.5);
 
       img {

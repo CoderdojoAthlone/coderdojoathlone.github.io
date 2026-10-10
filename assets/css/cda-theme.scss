@@ -9,6 +9,8 @@
 // Copyright © 2018 coderdojoathlone.github.io
 //
 
+@use "coderdojo-athlone/site";
+
 html,
 body {
   height: 100%;
@@ -16,4 +18,13 @@ body {
   line-height: 1.2;
 }
 
-@import "coderdojo-athlone/site";
+
+// Bootstrap 5 underlines links by default; keep the Bootstrap 4 look
+// (underline on hover only).
+body a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
